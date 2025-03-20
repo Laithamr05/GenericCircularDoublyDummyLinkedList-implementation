@@ -21,7 +21,7 @@ public class DummyCircularDoublyLinkedList<T> {
 		Node<T> nono = new Node(data);
 		nono.previous = dummy.previous;
 		nono.next = dummy;
-		dummy.next.previous = nono;
+		dummy.previous.next = nono;
 		dummy.previous = nono;
 	}
 
